@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#426476"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sec.health.health.CompromiseActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appcolor"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 健康跟踪类可穿戴设备、个人健康管理、运动类健康App正快速进入红海。产品极度雷同，获取客户的成本越来越高，而收入模式上持续模糊无法突破，独立存活非常困难，无法避免走向衰亡，甚至连出售给大公司可能都会变得非常困难。这是因为产业内的公司越来越意识到这些用户的价值并不高，
+
+            不忠诚且目的不明确，移动健康类产品本身也不能提供增值服务，只是一个空架子。
+移动健康针对健康者、运动爱好者和时尚追求者，这些人抱着娱乐的目的，很容易被营销活动吸引但又很快离去，因为产品不是必须性的，因此消费能力实际很低，这些资源很难转化成真正的医疗需求并长期保持下去。与此恰恰相反的是，真正的有服务内涵的移动医疗产业，其实在中国远未开始。
+移动医疗没有办法以单独的移动模式出现，这是因为医疗本身是一个极为专业而且沉重的活，移动的目的是为了在更省钱和方便的情况下更好地服务。而中国目前还不具备这样的大土壤。
+首先，谁来做服务?移动健康之所以门槛低是因为不需要专业的服务者，因此也留不住用户。但这也是中国市场的困境所在，真正的专业服务者——医生，缺乏动力去做真正的服务，因为我们的支付体系不为服务买单，而主要为产品买单。移动医疗的核心是拉近医患的关系，提高医生服务的效率，让病人更快好起来，但在目前的土壤下，医生并不关心这些事情。"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

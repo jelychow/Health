@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="commonBgColor">#F2F2F2</color>
+    <color name="headLineBgColor">#cccccc</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="blackColor1">#595758</color>
+    <color name="blackColor2">#847E80</color>
+    <color name="blackColor3">#4F4647</color>
+    <color name="blackColor4">#6C6666</color>
+    <color name="grayColor1">#C2C2C2</color>
+    <color name="grayColor2">#F4F4F4</color>
+    <color name="grayColor3">#A6A39A</color>
+    <color name="grayColor4">#8F8D8E</color>
+    <color name="grayColor5">#E1E1E1</color>
+    <color name="grayColor6">#747877</color>
+    <color name="grayColor7">#CBCACF</color>
+    <color name="grayColor8">#EBEBED</color>
+    <color name="yellowColor">#003399</color>
+    <color name="yellowColor1">#3399cc</color>
+    <color name="redColor1">#F05567</color>
+    <color name="redColor2">#FD4600</color>
+    <color name="blueColor">#0000FF</color>
+    <color name="blueColor1">#2aacff</color>
+    <color name="blueColor2">#007dc9</color>
+    
+     <color name="textPrimary">#787878</color>
+     <color name="textNormal">#282828</color>
+    
+   
+    <color name="buttonBg">#336699</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    
+    <color name="actionbar_color" >#18b4ed</color>
+	<color name="dark_color">#191f24</color>
+	<color name="yellow">#ec8558</color>
+    <color name="appcolor">#47697a</color>
+    <color name="btn_color">#9fbe3c</color>
+</resources>
