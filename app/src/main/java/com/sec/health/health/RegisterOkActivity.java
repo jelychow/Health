@@ -4,9 +4,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
-public class RegisterOkActivity extends BaseActivity {
+public class RegisterOkActivity extends BaseActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,5 +19,11 @@ public class RegisterOkActivity extends BaseActivity {
     public void initView() {
         super.initView();
         setContentView(R.layout.activity_register_ok);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

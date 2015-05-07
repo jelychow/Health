@@ -98,7 +98,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/text_huo"
+            android:id="@+id/btn_login"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -117,7 +117,7 @@
             android:id="@+id/text_xia"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_huo"
+            android:layout_below="@id/btn_login"
             android:paddingTop="10dp"
             >
             <CheckBox
@@ -174,42 +174,5 @@
                 android:textColor="#ffffff"
                 android:id="@+id/buton_qq3" />
         </FrameLayout>
-
     </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/login_down"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#F9F8F1" >
-
-        <TextView
-            android:id="@+id/text_xuyao"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:paddingBottom="8dp"
-            android:paddingTop="15dp"
-            android:text="需要一个帐号？" />
-
-        <TextView
-            android:id="@+id/register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/text_xuyao"
-            android:paddingTop="5dp"
-            android:text="注册"
-            android:textColor="#000000"
-            android:textSize="30dp" />
-    </RelativeLayout>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_above="@id/login_down"
-        android:background="@drawable/security_row_sign_bg" />
-
 </RelativeLayout>

@@ -38,4 +38,5 @@
 	<color name="yellow">#ec8558</color>
     <color name="appcolor">#47697a</color>
     <color name="btn_color">#9fbe3c</color>
+    <color name="drawerColor">#0d1e25</color>
 </resources>

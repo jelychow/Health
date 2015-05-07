@@ -1,9 +1,11 @@
 package com.sec.health.health;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.TextView;
 
 /**
@@ -21,6 +23,13 @@ public class BaseActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         //this is what we want
         toolbar.setNavigationIcon(R.drawable.ic_menu_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BaseActivity.this,StartActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

@@ -18,4 +18,5 @@
     <string name="title_activity_register">RegisterActivity</string>
     <string name="title_activity_compromise">CompromiseActivity</string>
     <string name="title_activity_register_ok">RegisterOkActivity</string>
+    <string name="title_activity_test">TestActivity</string>
 </resources>
