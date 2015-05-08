@@ -26,7 +26,7 @@ public class BaseActivity extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BaseActivity.this,StartActivity.class);
+                Intent intent = new Intent(BaseActivity.this,TestActivity.class);
                 startActivity(intent);
             }
         });

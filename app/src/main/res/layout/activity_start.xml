@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/transparent"
+
     tools:context="com.sec.health.health.StartActivity">
 
     <include android:id="@+id/toolbar"
@@ -22,8 +22,8 @@
             android:background="@drawable/abc_btn_borderless_material"
             android:layout_alignParentRight="true"
             android:text="医生登陆" />
-        <TextView
-            android:id="@+id/tv_patient"
+        <Button
+            android:id="@+id/btn_patient"
             android:layout_marginTop="20dp"
             android:layout_below="@id/btn_doc"
             android:layout_width="wrap_content"

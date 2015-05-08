@@ -4,16 +4,15 @@
     android:id="@+id/main_drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:background="@color/appcolor" >
+     >
 
     <RelativeLayout
         android:id="@+id/main_content_frame_parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/transparent" >
+     >
         <include android:id="@+id/toolbar"
-            layout="@layout/activity_login"/>
+            layout="@layout/activity_start"/>
 
 
          下层显示的主要内容
@@ -33,7 +32,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        android:background="@android:color/holo_blue_bright"
         android:paddingTop="20dp" >
         <include
             layout="@layout/drawer_left"/>
