@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 public class TestActivity extends AppCompatActivity implements View.OnClickListener, DrawerLayout.DrawerListener, FragmentUSerCenter.OnFragmentInteractionListener {
 
-    private TextView tv_fast_consult, test2;
+    private TextView tv_fast_consult, my_diagnosis,tv_more,tv_messages,tv_friends;
     private Button btnDoc, btnPatient;
     private LinearLayout container;
     FragmentManager fragmentManager;
@@ -26,7 +26,7 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
     LayoutInflater inflater;
     private Fragment currentFragment;
     private DrawerLayout mDrawerLayout;
-    private ImageView imClose,my_detail;
+    private ImageView imClose, my_detail;
     private Intent intent;
 
 
@@ -44,8 +44,14 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
         my_detail = (ImageView) findViewById(R.id.my_detail);
         tv_fast_consult = (TextView) findViewById(R.id.tv_fast_consult);
         tv_fast_consult.setOnClickListener(this);
-        test2 = (TextView) findViewById(R.id.test2);
-        test2.setOnClickListener(this);
+        my_diagnosis = (TextView) findViewById(R.id.my_diagnosis);
+        tv_more = (TextView) findViewById(R.id.tv_more);
+        my_diagnosis.setOnClickListener(this);
+        tv_more.setOnClickListener(this);
+        tv_messages = (TextView) findViewById(R.id.tv_messages);
+        tv_messages.setOnClickListener(this);
+        tv_friends = (TextView) findViewById(R.id.tv_friends);
+        tv_friends.setOnClickListener(this);
         btnDoc = (Button) findViewById(R.id.btn_doc);
         btnPatient = (Button) findViewById(R.id.btn_patient);
         btnDoc.setOnClickListener(this);
@@ -75,6 +81,19 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tv_fast_consult:
                 changeFrament(new PlusTwoFragment(), "tv_fast_consult");
                 break;
+
+            case R.id.tv_more:
+                changeFrament(new AboutMoreFragment(), "AboutMoreFragment");
+                break;
+            case R.id.my_diagnosis:
+                changeFrament(new DiagnosisFragment(), "DiagnosisFragment");
+                break;
+            case R.id.tv_messages:
+                changeFrament(new MessagesFragment(), "MessagesFragment");
+                break;
+            case R.id.tv_friends:
+                changeFrament(new FriendsFragment(), "FriendsFragment");
+                break;
             case R.id.image_close:
                 container.setVisibility(View.GONE);
                 mDrawerLayout.closeDrawer(Gravity.LEFT);
@@ -82,6 +101,8 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_doc:
                 intent = new Intent(TestActivity.this, LoginActivity.class);
                 startActivity(intent);
+                break;
+            default:
                 break;
         }
     }
