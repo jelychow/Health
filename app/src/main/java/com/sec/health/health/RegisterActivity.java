@@ -2,12 +2,11 @@ package com.sec.health.health;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 
-public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
+public class RegisterActivity extends BaseActivity implements View.OnClickListener{
 
     private Button btnNext;
     private Intent intent;
@@ -15,11 +14,17 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+
         btnNext = (Button) findViewById(R.id.button_next);
         btnNext.setOnClickListener(this);
+        title.setText("登录");
     }
 
+    @Override
+    public void initView() {
+        super.initView();
+        setContentView(R.layout.activity_register);
+    }
 
     @Override
     public void onClick(View v) {

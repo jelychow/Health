@@ -45,12 +45,25 @@
         </activity>
         <activity
             android:name=".TestActivity"
-            android:label="@string/title_activity_test" >
+            android:label="@string/title_activity_test"
+            android:launchMode="singleInstance" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".userdata.UserDataActivity"
+            android:label="@string/title_activity_user_data" >
+        </activity>
+        <activity
+            android:name=".IntegrationMallActivity"
+            android:label="@string/title_activity_integration_mall" >
+        </activity>
+        <activity
+            android:name=".SelfInspectionActivity"
+            android:label="@string/title_activity_self_inspection" >
         </activity>
     </application>
 

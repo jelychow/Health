@@ -39,15 +39,14 @@
         android:layout_width="fill_parent"
         android:layout_height="40dp"
          >
-        <android.support.v7.widget.SearchView
+        <EditText
             android:layout_width="fill_parent"
-            android:theme="@style/Widget.AppCompat.Light.SearchView"
-            android:clipToPadding="true"
-            android:layoutMode="clipBounds"
-            android:queryHint="请输入您想要的。。"
-            android:background="@drawable/abc_textfield_search_material"
-            android:layout_height="20dp">
-         </android.support.v7.widget.SearchView>
+            android:theme="@style/Widget.AppCompat.EditText"
+            android:drawableLeft="@android:drawable/ic_search_category_default"
+            android:drawableStart="@android:drawable/ic_search_category_default"
+            android:hint="请输入您想要的。。"
+            android:layout_height="wrap_content">
+         </EditText>
         <LinearLayout
             android:layout_marginTop="15dp"
             android:layout_gravity="bottom"

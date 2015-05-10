@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appcolor"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/perm_group_accounts"
+            android:drawablePadding="3dp"
+            android:hint="初诊医院"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/perm_group_system_clock"
+            android:drawablePadding="3dp"
+            android:hint="初诊日期"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/perm_group_calendar"
+            android:drawablePadding="3dp"
+            android:hint="复诊日期"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/perm_group_calendar"
+            android:drawablePadding="3dp"
+            android:hint="病情自查"
+            android:drawableRight="@drawable/ic_return"
+            android:drawableEnd="@drawable/ic_return"
+            android:textColorHint="@color/white" />
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/linear_top"
+            android:layout_marginLeft="0dp"
+
+            android:text="确定"
+            android:background="#9fbe3c"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+</LinearLayout>

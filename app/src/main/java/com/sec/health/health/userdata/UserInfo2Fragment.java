@@ -1,5 +1,4 @@
-package com.sec.health.health;
-
+package com.sec.health.health.userdata;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -7,47 +6,41 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.Button;
 
-import com.sec.health.health.userdata.UserDataActivity;
+import com.sec.health.health.R;
+import com.sec.health.health.TestActivity;
 
-
-public class UserInfoFragment extends Fragment {
+public class UserInfo2Fragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    private TextView tv_modify;
-    private String mParam1;
-    private String mParam2;
-    private Intent intent;
 
-    public UserInfoFragment() {
-
+    private Button btnOk;
+    public UserInfo2Fragment() {
+        // Required empty public constructor
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-       View view = inflater.inflate(R.layout.fragment_user_info, container, false);
-        tv_modify = (TextView) view.findViewById(R.id.tv_modify);
+
+        View view = inflater.inflate(R.layout.fragment_user, container, false);
+        btnOk = (Button) view.findViewById(R.id.btn_ok);
         return view;
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        tv_modify.setOnClickListener(new View.OnClickListener() {
+        btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(getActivity(), UserDataActivity.class);
+                Intent intent = new Intent(getActivity(), TestActivity.class);
                 startActivity(intent);
             }
         });

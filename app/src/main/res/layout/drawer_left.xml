@@ -12,8 +12,17 @@
         android:background="@color/drawerColor"
         android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/my_detail"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:drawableTop="@drawable/icn_1"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/user_default"
+            android:text="" />
         <TextView
-            android:id="@+id/test"
+            android:id="@+id/tv_fast_consult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableTop="@drawable/icn_1"
