@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="病情资料"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon2_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/item_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bg"
+            android:paddingLeft="10dp" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:text="病情自查[可选项]"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:src="@drawable/icon2_41" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/item_1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_bg"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_89" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:gravity="top"
+                android:hint="主诉[请简要的说明这次诊疗的主要内容，如：“不适应部位”]-[30字]"
+                android:lineSpacingExtra="7dp"
+                android:lines="3"
+                android:maxLength="30"
+                android:paddingStart="25dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/next_btn"
+            android:layout_marginBottom="20dp"
+            android:background="#FFFFFF" />
+
+        <Button
+            android:id="@id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/icon_12"
+            android:text="下一步" />
+    </RelativeLayout>
+
+</LinearLayout>

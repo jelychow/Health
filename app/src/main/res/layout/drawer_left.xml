@@ -19,7 +19,7 @@
             android:drawableTop="@drawable/icn_1"
             android:textColor="@color/white"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/user_default"
+            android:src="@drawable/icon_friends"
             android:text="" />
         <TextView
             android:id="@+id/tv_fast_consult"

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="追问"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon2_24" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/select_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="2月7日11:05"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/aks_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:layout_above="@+id/select_bottom"
+        android:background="#00000000" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@id/select_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#50ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+       <ImageView 
+           android:id="@+id/laba"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:src="@drawable/icon2_212"/>
+		<EditText 
+		    android:layout_width="match_parent"
+		    android:layout_height="35dp"
+		    android:layout_toRightOf="@id/laba"
+		   android:layout_centerVertical="true"	
+		   android:layout_marginLeft="10dp"
+		   android:layout_marginRight="40sp"
+		    android:background="@drawable/input_bg1"/>
+		 <ImageView 
+           android:id="@+id/laba2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+          
+           android:src="@drawable/icon2_212"/>
+    </RelativeLayout>
+
+</RelativeLayout>

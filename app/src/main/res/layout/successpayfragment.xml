@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <RelativeLayout
+        android:id="@+id/upload_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="支付成功"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon2_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:padding="20dp" >
+        <ImageView 
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_16"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="支付成功"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:text="是否现在发送诊疗？"/>
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170dp"
+            android:text="[发送视频将使用流量,确认您是否在WIFI环境下"/>
+         <RelativeLayout 
+             android:id="@+id/succsee_pay_next"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_marginTop="200dp"
+             android:background="@drawable/icon_175"
+             android:gravity="center">
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="#FFFFFF"
+                 android:text="我确定,现在发送"/>
+         </RelativeLayout>
+        
+         <RelativeLayout 
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_marginTop="270dp"
+             android:background="@drawable/icon2_170"
+             android:gravity="center">
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="#FFFFFF"
+                 android:text="不,我将稍后发送[连上WIFI自动发送]"/>
+         </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
